@@ -58,6 +58,10 @@ ENumbers = [
 
 function convert() {
   let digits = parseInt(input.value);
+  if (digits == 69) {
+    window.location.href = "https://www.youtube.com/watch?v=p7YXXieghto";
+    return;
+  }
   output.innerHTML = converters[language.value](digits);
 }
 
