@@ -1,9 +1,15 @@
-let input = document.getElementById("input");
-let GOutput = document.getElementById("Goutput");
-let EOutput = document.getElementById("Eoutput");
+const input = document.getElementById("input");
+const output = document.getElementById("output");
 
-let enter = document.getElementById("enter");
+const language = document.getElementById("language");
+
+const enter = document.getElementById("enter");
 enter.addEventListener("click", convert);
+
+const English = "English";
+const German = "German";
+
+const converters = { English: convertToEnglish, German: convertToGerman };
 
 GNumbers = [
   "Zero",
@@ -52,8 +58,7 @@ ENumbers = [
 
 function convert() {
   let digits = parseInt(input.value);
-  GOutput.innerHTML = convertToGerman(digits);
-  EOutput.innerHTML = convertToEnglish(digits);
+  output.innerHTML = converters[language.value](digits);
 }
 
 function convertToGerman(digits) {

@@ -3,13 +3,17 @@
 }
 
 input,
-button {
-  border-radius: 10px;
-  border-width: 2px;
+button,
+select {
+  border-radius: 5px;
+  border-width: 1pt;
   border-color: black;
   border-style: solid;
 }
 
 button {
-  background-color: #aaccdd;
+  background-color: #ffffff;
+}
+button:hover {
+  background-color: #dddddd;
 }
