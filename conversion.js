@@ -7,7 +7,7 @@ const enter = document.getElementById("enter");
 enter.addEventListener("click", convert);
 
 const English = "English";
-const German = "German";
+const German = "Deutsch";
 
 const converters = { English: convertToEnglish, German: convertToGerman };
 
