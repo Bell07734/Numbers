@@ -7,9 +7,9 @@ const enter = document.getElementById("enter");
 enter.addEventListener("click", convert);
 
 const English = "English";
-const German = "Deutsch";
+const Deutsch = "Deutsch";
 
-const converters = { English: convertToEnglish, German: convertToGerman };
+const converters = { English: convertToEnglish, Deutsch: convertToGerman };
 
 GNumbers = [
   "Zero",
